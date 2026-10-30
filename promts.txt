@@ -1,0 +1,68 @@
+Promt 1: Dame una breve biografia de la comuna de Recoleta en santiago de chile,
+como un codigo para una página, sin el html, solo las secciones, div y mains 
+necesarios para esta y sin navbar y tampoco incluyas el estilo css.
+
+Promt 2: ahora dame el mismo tipo de codigo (no exactamente el mismo patron de 
+sections ni nada por el estilo) pero con lugares destacados de recoleta.
+
+Promt 3: ahora, de la misma manera que te lo he pedido dame el mismo tipo de 
+codigo pero con la historia y cultura de recoleta.
+
+Promt 4: quiero agregar un componente de mapa a mi codigo, ya tengo la carpeta
+componets y el archivo que se llama Mapa.astro, quiero que me digas como puedo 
+integrar un mapa a este componente para integrarlo en mi pagina con layout, 
+como una imagen pequeña o solo en un pequeño espacio. 
+
+Promt 5:ahora, quiero que hagas al igual que el codigo anterior, un componente 
+llamado masinfo.astro que nos envie a una pàgina que nos de mas informacion de 
+recoleta (la pàgina debe ser de nuestra eleccion, no la elijas tu) y que no sea 
+con css solo el codigo limpio.
+
+Promt 6: ahora, quiero que hagas un estilo global (css) para que las pàginas 
+compartan un mismo estilo, pero que tambien le des un estilo unico a cada 
+página, obviamente que sea uno relacionado con la tematica y no se separen una 
+de la otra, para el estilo unico usa la etiqueta style preparado para cada 
+página que hiciste anteriormente dandole un color de fondo y colores para las 
+diferentes secciones de la página siguiendo un orden y siendo coherente, 
+permitiendo que los titulos esten correctamente centrados, y por ultimo tambien 
+agregale estilo al header y footer respectivamente (estos son componentes a 
+parte). 
+
+Promt 7:
+    ---
+    import Mapa from "../components/Mapa.astro"
+    ---
+
+    <div>
+    <Mapa />
+
+        <h1>Descubriendo Recoleta</h1>
+        <div class="navbar">
+          <a href="/">inicio</a>
+          <a href="/lugares_destacados">lugares</a>
+          <a href="/historia_cultura">historia</a>
+       </div>
+    </div>
+
+    Este es el codigo del header, quiero que le hagas un estilo para que 
+    combine con el resto de estilos que hiciste hace un momento.
+
+    ---
+
+    ---
+
+    <div>
+        <footer>
+         <p>
+              Hecho por: <a href="#">a_geriverosa@colegiosanlorenzo.org</a> y <a
+                    href="#">a_feribarras@colegiosanlorenzo.org</a
+              > © 2026
+         </p>
+       </footer>
+    </div>
+
+    Este es el footer, y quiero que hagas lo mismo que hagas para el header, 
+    centrandolo y dandole un estilo adecuado para las páginas.
+
+
+    No quiero que modifiques nada del codigo anterior, solo agregale el estilo.
