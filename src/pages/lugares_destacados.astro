@@ -1,0 +1,204 @@
+---
+import Baselayout from "../layouts/baselayout.astro";
+---
+
+<Baselayout title="lugares">
+    <main>
+        <header class="cabecera-lugares">
+            <h1>Lugares Destacados de Recoleta</h1>
+            <p>
+                Descubre los hitos turísticos, culturales y patrimoniales más
+                importantes de la comuna.
+            </p>
+        </header>
+
+        <section class="destacados-principales">
+            <h2>Atracciones Imperdibles</h2>
+
+            <article class="lugar-card">
+                <h3>Cementerio General de Santiago</h3>
+                <span class="categoria">Patrimonio Histórico y Cultural</span>
+                <p>
+                    Un verdadero museo al aire libre de 85 hectáreas. Fundado en
+                    1821, destaca por su impresionante arquitectura neoclásica y
+                    mausoleos donde descansan las personalidades más influyentes
+                    de la historia de Chile.
+                </p>
+                <div class="detalles-lugar">
+                    <p><strong>Ubicación:</strong> Av. Profesor Zañartu 951</p>
+                    <p>
+                        <strong>Lo mejor:</strong> Recorridos nocturnos guiados y
+                        valor arquitectónico.
+                    </p>
+                </div>
+            </article>
+
+            <article class="lugar-card">
+                <h3>La Vega Central</h3>
+                <span class="categoria">Gastronomía y Comercio</span>
+                <p>
+                    El corazón del abastecimiento de la capital. Este vibrante
+                    mercado es célebre por la variedad y frescura de sus
+                    productos, sus populares picadas gastronómicas y su ambiente
+                    multicultural único.
+                </p>
+                <div class="detalles-lugar">
+                    <p><strong>Ubicación:</strong> Dávila Baeza 700</p>
+                    <p>
+                        <strong>Lo mejor:</strong> Gastronomía chilena e internacional
+                        a precios accesibles.
+                    </p>
+                </div>
+            </article>
+
+            <article class="lugar-card">
+                <h3>Parque Bicentenario de la Infancia</h3>
+                <span class="categoria">Naturaleza y Recreación</span>
+                <p>
+                    Ubicado en las laderas del Cerro San Cristóbal, es un
+                    innovador espacio urbano diseñado especialmente para niños,
+                    con toboganes en la pendiente, juegos de agua, casas en los
+                    árboles y un funicular panorámico.
+                </p>
+                <div class="detalles-lugar">
+                    <p><strong>Ubicación:</strong> Av. Perú 1001</p>
+                    <p>
+                        <strong>Lo mejor:</strong> Vistas de Santiago y senderos conectados
+                        con Parquemet.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="barrios-comercio">
+            <h2>Barrios Emblemáticos</h2>
+
+            <div class="grid-barrios">
+                <article class="barrio-item">
+                    <h3>Barrio Patronato</h3>
+                    <p>
+                        Conocido tradicionalmente como el centro de la moda
+                        textil a precios accesibles. Destaca por su diversidad
+                        comercial impulsada por las comunidades árabe, coreana,
+                        china y latinoamericana, ofreciendo también una amplia
+                        oferta de gastronomía étnica.
+                    </p>
+                </article>
+
+                <article class="barrio-item">
+                    <h3>Barrio Bellavista (Sector Recoleta)</h3>
+                    <p>
+                        Eje neurálgico del arte, la cultura y la vida nocturna
+                        de Santiago. En el sector perteneciente a Recoleta se
+                        encuentra <strong>La Chascona</strong>, célebre
+                        casa-museo del poeta y Premio Nobel Pablo Neruda.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="centros-culturales">
+            <h2>Patrimonio Religioso y Museos</h2>
+
+            <div class="contenedor-cultural">
+                <article class="hito-cultural">
+                    <h3>Centro Patrimonial Recoleta Dominica</h3>
+                    <p>
+                        Imponente conjunto arquitectónico neoclásico del siglo
+                        XIX que alberga la Iglesia de la Recoleta Dominica, el
+                        Museo de Artes Decorativas, el Museo Histórico Dominico
+                        y su histórica biblioteca con miles de tomos antiguos.
+                    </p>
+                    <p><strong>Ubicación:</strong> Av. Recoleta 683</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</Baselayout>
+<style>
+    /* Paleta cromática: Verdes inspirados en el Parque Metropolitano y cerros */
+    .cabecera-lugares {
+        background-color: #f0fff4;
+        border: 1px solid #9ae6b4;
+        padding: 2rem;
+        border-radius: var(--radio-borde);
+        margin-bottom: 2rem;
+    }
+
+    .cabecera-lugares h1 {
+        color: #22543d;
+        text-align: center;
+    }
+
+    .cabecera-lugares p {
+        text-align: center;
+        color: #2f855a;
+    }
+
+    .destacados-principales h2 {
+        color: #22543d;
+    }
+
+    .lugar-card {
+        background-color: #ffffff;
+        border-top: 4px solid #38a169;
+        padding: 1.5rem;
+        border-radius: var(--radio-borde);
+        box-shadow: var(--sombra-tarjeta);
+        margin-bottom: 1.5rem;
+    }
+
+    .lugar-card h3 {
+        color: #276749;
+        text-align: left;
+    }
+
+    .categoria {
+        display: inline-block;
+        background-color: #c6f6d5;
+        color: #22543d;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+    }
+
+    .detalles-lugar {
+        background-color: #f7fafc;
+        padding: 0.75rem;
+        border-radius: 6px;
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .grid-barrios {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .barrio-item {
+        background-color: #f0fff4;
+        padding: 1.25rem;
+        border-radius: var(--radio-borde);
+        border: 1px solid #c6f6d5;
+    }
+
+    .barrio-item h3 {
+        color: #22543d;
+    }
+
+    .centros-culturales {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: var(--radio-borde);
+        box-shadow: var(--sombra-tarjeta);
+        margin-top: 2rem;
+    }
+
+    .centros-culturales h2 {
+        color: #22543d;
+    }
+</style>

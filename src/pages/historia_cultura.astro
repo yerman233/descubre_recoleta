@@ -1,0 +1,227 @@
+---
+import Baselayout from "../layouts/baselayout.astro";
+---
+
+<Baselayout title="historia">
+    <main>
+        <header class="encabezado-historia-cultura">
+            <h1>Historia y Cultura de Recoleta</h1>
+            <p>
+                Desde las raíces originarias de La Chimba hasta el crisol
+                multicultural del Santiago contemporáneo.
+            </p>
+        </header>
+
+        <section class="linea-tiempo-historica">
+            <h2>Evolución Histórica: El Espíritu de La Chimba</h2>
+
+            <div class="linea-tiempo">
+                <article class="hito-cronologico">
+                    <header>
+                        <span class="epoca">Época Precolombina y Colonial</span>
+                        <h3>El "Otro Lado" del Río Mapocho</h3>
+                    </header>
+                    <p>
+                        Conocida originalmente como <em>La Chimba</em> (término quechua
+                        que significa "de la otra orilla"), esta zona era la ribera
+                        norte del río Mapocho. Durante la época colonial funcionó
+                        como un territorio de asentamiento indígena, artesanos y mestizos,
+                        caracterizado por su vida al margen de la rígida traza urbana
+                        española del centro.
+                    </p>
+                </article>
+
+                <article class="hito-cronologico">
+                    <header>
+                        <span class="epoca">Siglos XVIII y XIX</span>
+                        <h3>Monasterios Recoletos y Muerte Ilustrada</h3>
+                    </header>
+                    <p>
+                        El nombre moderno de la comuna surge por los conventos
+                        franciscanos y dominicos establecidos bajo la regla de
+                        la "recolección" (vida austera y de retiro). En 1821,
+                        Bernardo O'Higgins fundó allí el Cementerio General,
+                        convirtiendo al sector en el centro republicano de la
+                        memoria y el arte funerario de Chile.
+                    </p>
+                </article>
+
+                <article class="hito-cronologico">
+                    <header>
+                        <span class="epoca">Siglo XX a la Actualidad</span>
+                        <h3>Industrialización e Identidad Comunal</h3>
+                    </header>
+                    <p>
+                        A lo largo del siglo XX, el sector se transformó en un
+                        dinámico polo textil, comercial y residencial. En 1991
+                        comenzó a funcionar oficialmente la Municipalidad de
+                        Recoleta tras separarse de Conchalí, afianzándose hoy
+                        como un símbolo de diversidad social e integración.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="pilares-culturales">
+            <h2>Pilares de la Identidad Recoletana</h2>
+
+            <div class="bloques-identidad">
+                <article class="pilar-item">
+                    <h3>1. Identidad Popular "Chimbana"</h3>
+                    <p>
+                        Recoleta conserva el carácter acogedor e informal de La
+                        Chimba colonial. Su vida comunitaria orbita en torno al
+                        trabajo de abasto en los mercados, las picadas
+                        gastronómicas criollas y las fiestas populares que
+                        alimentan el folclore urbano de Santiago.
+                    </p>
+                </article>
+
+                <article class="pilar-item">
+                    <h3>2. El Crisol Multicultural</h3>
+                    <p>
+                        La comuna ha sido históricamente la puerta de entrada
+                        para diversas olas migratorias: comunidades palestinas,
+                        árabes e italianas a inicios del siglo XX en Patronato,
+                        seguidas por las comunidades coreana, peruana, haitiana
+                        y venezolana en décadas recientes, enriqueciendo la
+                        gastronomía, el comercio y la vida comunitaria.
+                    </p>
+                </article>
+
+                <article class="pilar-item">
+                    <h3>3. La Bohemia Poética y Artística</h3>
+                    <p>
+                        A los pies del Cerro San Cristóbal floreció un activo
+                        polo intelectual y artístico. La presencia de Pablo
+                        Neruda con su casa <em>La Chascona</em> convirtió a la zona
+                        en punto de encuentro para poetas, pintores y músicos que
+                        marcaron la historia cultural del país.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="patrimonio-inmaterial">
+            <h2>Tradiciones y Expresiones Culturales</h2>
+
+            <blockquote>
+                <p>
+                    «La Chimba fue históricamente el espacio de la libertad, lo
+                    popular y la creación espontánea frente al rigor de la
+                    ciudad colonial.»
+                </p>
+            </blockquote>
+
+            <ul class="lista-tradiciones">
+                <li>
+                    <strong>Rutas de la Memoria y el Arte:</strong> Recorridos patrimoniales
+                    en el Cementerio General que repasan la historia política, literaria
+                    y social de Chile.
+                </li>
+                <li>
+                    <strong>Carnavales y Festividades Multiculturales:</strong> Celebraciones
+                    callejeras que integran tradiciones latinoamericanas y orientales
+                    en el barrio Patronato y sus alrededores.
+                </li>
+                <li>
+                    <strong>Arquitectura de Cités y Pasajes:</strong> Conservación
+                    de viviendas colectivas tradicionales del siglo XX que reflejan
+                    la antigua vida de barrio santiaguina.
+                </li>
+            </ul>
+        </section>
+    </main>
+</Baselayout>
+<style>
+    /* Paleta cromática: Ocres y calidez histórica */
+    .encabezado-historia-cultura {
+        background-color: #fffaf0;
+        border: 1px solid #fbd38d;
+        padding: 2rem;
+        border-radius: var(--radio-borde);
+        margin-bottom: 2rem;
+    }
+
+    .encabezado-historia-cultura h1 {
+        color: #744210;
+        text-align: center;
+    }
+
+    .encabezado-historia-cultura p {
+        text-align: center;
+        color: #975a16;
+    }
+
+    .linea-tiempo-historica h2 {
+        color: #744210;
+    }
+
+    .hito-cronologico {
+        background-color: #ffffff;
+        border-left: 4px solid #dd6b20;
+        padding: 1.25rem;
+        border-radius: 0 var(--radio-borde) var(--radio-borde) 0;
+        box-shadow: var(--sombra-tarjeta);
+        margin-bottom: 1.25rem;
+    }
+
+    .hito-cronologico h3 {
+        text-align: left;
+        color: #9c4221;
+    }
+
+    .epoca {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #dd6b20;
+        letter-spacing: 0.5px;
+    }
+
+    .pilares-culturales {
+        background-color: #fffaf0;
+        padding: 1.5rem;
+        border-radius: var(--radio-borde);
+        margin: 2rem 0;
+    }
+
+    .pilares-culturales h2 {
+        color: #744210;
+    }
+
+    .pilar-item {
+        background-color: #ffffff;
+        padding: 1.25rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border: 1px solid #feebc8;
+    }
+
+    .pilar-item h3 {
+        color: #9c4221;
+        text-align: left;
+    }
+
+    blockquote {
+        background-color: #feebc8;
+        border-left: 5px solid #c05621;
+        padding: 1.25rem;
+        font-style: italic;
+        color: #744210;
+        border-radius: 4px;
+        margin: 1.5rem 0;
+    }
+
+    blockquote p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .lista-tradiciones {
+        background-color: #ffffff;
+        padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+        border-radius: var(--radio-borde);
+        box-shadow: var(--sombra-tarjeta);
+    }
+</style>

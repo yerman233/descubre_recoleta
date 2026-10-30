@@ -1,0 +1,37 @@
+---
+interface Props {
+  direccion?: string;
+  ancho?: string;
+  alto?: string;
+}
+
+const { 
+  direccion = "Recoleta, Santiago, Chile", 
+  ancho = "100%", 
+  alto = "200px" 
+} = Astro.props;
+
+const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(direccion)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+---
+
+<div class="mapa-contenedor" style={`width: ${ancho}; height: ${alto};`}>
+  <iframe
+    src={mapUrl}
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title={`Mapa de ${direccion}`}
+  ></iframe>
+</div>
+
+<style>
+  .mapa-contenedor {
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+</style>

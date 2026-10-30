@@ -1,16 +1,159 @@
 ---
+import Baselayout from "../layouts/baselayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Baselayout title="Pagina principal">
+    <main class="todo">
+        <section class="biografia-recoleta">
+            <header>
+                <h1>Comuna de Recoleta</h1>
+                <p>Santiago de Chile</p>
+            </header>
+
+            <div class="resumen-ejecutivo">
+                <p>
+                    Recoleta es una de las comunas más emblemáticas e históricas
+                    de la Región Metropolitana de Santiago. Ubicada en la zona
+                    norte del valle de la capital, destaca por su
+                    multiculturalidad, su intenso comercio y su invaluable
+                    patrimonio arquitectónico y cultural. Limita al sur con el
+                    río Mapocho y la comuna de Santiago, al este con Providencia
+                    y Vitacura, al norte con Huechuraba y al oeste con Conchalí
+                    e Independencia.
+                </p>
+            </div>
+
+            <section class="historia">
+                <h2>Origen e Historia</h2>
+                <p>
+                    Durante la época colonial, la zona ubicada al norte del río
+                    Mapocho era conocida como «La Chimba» (palabra de origen
+                    quechua que significa «del otro lado»). Este sector estuvo
+                    históricamente asociado a asentamientos indígenas,
+                    artesanos, quintas agrícolas y conventos de órdenes
+                    religiosas.
+                </p>
+                <p>
+                    El nombre «Recoleta» proviene de los religiosos franciscanos
+                    y domínicos recoletos que establecieron allí sus monasterios
+                    e iglesias en el siglo XVIII. Políticamente, la comuna fue
+                    creada oficialmente en 1981 mediante el DFL N° 1-3260, pero
+                    su municipalidad comenzó a operar de forma autónoma en 1991
+                    tras escindirse del territorio de Conchalí.
+                </p>
+            </section>
+
+            <section class="patrimonio-hitos">
+                <h2>Patrimonio y Puntos de Interés</h2>
+                <ul>
+                    <li>
+                        <strong
+                            >Cerro San Cristóbal (Parque Metropolitano):</strong
+                        > El mayor pulmón verde urbano de la ciudad, cuyo acceso histórico
+                        principal se encuentra en la comuna.
+                    </li>
+                    <li>
+                        <strong>Cementerio General de Santiago:</strong> Fundado en
+                        1821 por Bernardo O'Higgins, es un museo al aire libre que
+                        resguarda la tumba de la gran mayoría de los presidentes y
+                        figuras históricas de Chile.
+                    </li>
+                    <li>
+                        <strong>La Vega Central:</strong> El mercado de abastos más
+                        tradicional e importante de la Región Metropolitana.
+                    </li>
+                    <li>
+                        <strong>Barrio Bellavista:</strong> Polo cultural, gastronómico
+                        y turístico compartido con Providencia, que alberga hitos
+                        como La Chascona (casa-museo de Pablo Neruda).
+                    </li>
+                    <li>
+                        <strong
+                            >Iglesia y Convento de la Recoleta Dominica:</strong
+                        > Conjunto patrimonial que alberga el Museo de Artes Decorativas
+                        y el Museo Histórico Dominico.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="caracteristicas-actuales">
+                <h2>Identidad y Desarrollo Actual</h2>
+                <p>
+                    En la actualidad, Recoleta es un dinámico centro urbano
+                    caracterizado por su diversidad social y cultural, siendo un
+                    punto clave de integración para comunidades de inmigrantes
+                    de variadas procedencias. La comuna combina zonas
+                    residenciales tradicionales con áreas comerciales de alta
+                    concurrencia como el barrio Patronato.
+                </p>
+            </section>
+        </section>
+    </main>
+</Baselayout>
+<style>
+  /* Paleta cromática: Tonos arcilla y ladrillo tradicional */
+  .biografia-recoleta header {
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    padding: 2rem;
+    border-radius: var(--radio-borde);
+    margin-bottom: 2rem;
+  }
+
+  .biografia-recoleta header h1 {
+    color: #9b2c2c;
+    text-align: center;
+  }
+
+  .biografia-recoleta header p {
+    text-align: center;
+    color: #c53030;
+    font-weight: 600;
+  }
+
+  .resumen-ejecutivo {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-left: 5px solid #9b2c2c;
+    border-radius: 4px;
+    box-shadow: var(--sombra-tarjeta);
+    margin-bottom: 2rem;
+  }
+
+  .historia {
+    background-color: #fffaf0;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+    margin-bottom: 2rem;
+  }
+
+  .historia h2 {
+    color: #7b341e;
+  }
+
+  .patrimonio-hitos {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-tarjeta);
+    margin-bottom: 2rem;
+  }
+
+  .patrimonio-hitos h2 {
+    color: #9b2c2c;
+  }
+
+  .patrimonio-hitos li {
+    margin-bottom: 0.75rem;
+  }
+
+  .caracteristicas-actuales {
+    background-color: #feebc8;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+  }
+
+  .caracteristicas-actuales h2 {
+    color: #744210;
+  }
+</style>

@@ -1,0 +1,58 @@
+---
+import Mapa from "../components/Mapa.astro";
+---
+
+<div>
+    <Mapa />
+
+    <h1>Descubriendo Recoleta</h1>
+    <div class="navbar">
+        <a href="/">inicio</a>
+        <a href="/lugares_destacados">lugares</a>
+        <a href="/historia_cultura">historia</a>
+    </div>
+</div>
+
+<style>
+    div {
+        background-color: #1e293b;
+        padding: 1.5rem 1rem 1.25rem 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    h1 {
+        color: #f8fafc;
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: capitalize;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+    .navbar a:hover {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>

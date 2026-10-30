@@ -1,0 +1,17 @@
+---
+interface Props {
+  url: string;
+  texto?: string;
+}
+
+const { 
+  url, 
+  texto = "Más información sobre Recoleta" 
+} = Astro.props;
+---
+
+<div class="contenedor-mas-info">
+  <a href={url} target="_blank" rel="noopener noreferrer">
+    <span>{texto}</span>
+  </a>
+</div>
